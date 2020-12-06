@@ -37,13 +37,13 @@ class GoodTest {
 	@Test
 	void testToStringWithDescription() {
 		MockGood good = new MockGood("description", 2, BigDecimal.ONE);
-		assertEquals("2 description : 2.00", good.toString());
+		assertEquals("2 description: 2.20", good.toString());
 	}
 
 	@Test
 	void testToString() {
 		MockGood good = new MockGood();
-		assertEquals("1 Article : 1.00", good.toString());
+		assertEquals("1 Article: 1.10", good.toString());
 	}
 
 	@Test
