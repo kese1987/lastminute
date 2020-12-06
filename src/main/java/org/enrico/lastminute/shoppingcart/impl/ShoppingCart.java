@@ -22,7 +22,7 @@ public class ShoppingCart implements IShoppingCart {
 		}
 
 		items.add(item);
-		totalTaxes = totalTaxes.add(item.getTaxes());
+		totalTaxes = totalTaxes.subtract(item.getTaxes());
 		totalGrossAmount = totalGrossAmount.add(item.getGrossPrice());
 
 		return this;
